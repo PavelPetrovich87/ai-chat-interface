@@ -60,7 +60,7 @@ export const HomePage = () => {
     const data = await response.json();
 
     if (!response.ok) {
-      throw new Error(`Worker error: ${response.error}`);
+      throw new Error(`Worker error: ${data.error}`);
     }
 
     return data;
