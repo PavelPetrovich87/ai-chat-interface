@@ -13,12 +13,6 @@ export default defineConfig({
       }
     }
   },
-  css: {
-    postcss: {
-      plugins: [
-        require('tailwindcss'),
-        require('autoprefixer'),
-      ],
-    },
-  },
+  // Vite handles CSS processing automatically with PostCSS/Tailwind
+  // No need for explicit CSS config here
 })
