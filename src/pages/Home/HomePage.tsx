@@ -31,6 +31,7 @@ const parseStockData = (stockDataArray: string[]): StockDataResponse[] => {
 };
 
 export const HomePage = () => {
+  console.log('HomePage');
   
   const [tickers, setTickers] = useState<string[]>([]);
   const [inputValue, setInputValue] = useState('');
