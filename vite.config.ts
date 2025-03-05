@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://c9845e18-my-ai-clouflare-app.my-ai-cloudflare-app.workers.dev/',
+        target: 'https://0d0cf740-my-ai-clouflare-app.my-ai-cloudflare-app.workers.dev/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       }
